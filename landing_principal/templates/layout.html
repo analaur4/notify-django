@@ -1,0 +1,84 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Notify</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <script defer src="{% static 'js/scripts.js' %}"></script>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+</head>
+
+<body>
+    <div class="grid">
+        <header>
+
+            <div class="it-header">
+                <p>
+                    Notify<span>.</span>
+                </p>
+
+                <p>
+                    A great new free psd theme to showcase your new application.
+                </p>
+
+                <div class="icones-header">
+                    <div class="icone-ios">
+                        <img src="{% static 'images/icone-ios.png' %}" alt="IOS">
+                    </div>
+                    <div class="icone-android">
+                        <img src="{% static 'images/icone-android.png' %}" alt="ANDROID">
+                    </div>
+                    <div class="icone-windows">
+                        <img src="{% static 'images/icone-windows.png' %}" alt="WINDOWS">
+                    </div>
+                </div>
+            </div>
+
+            <div class="hand-header">
+                <img src="{% static 'images/hand.png' %}" alt="HAND">
+            </div>
+
+            <div class="menu-hamburguer">
+                <span class="traco"></span>
+                <span class="traco"></span>
+                <span class="traco"></span>
+            </div>
+
+        </header>
+
+        {% block content %}
+
+        {% endblock %}
+
+        <footer>
+            <div class="footer-conteudo">
+                <p>
+                    Contact
+                </p>
+                <p>
+                    Download
+                </p>
+                <p>
+                    Press
+                </p>
+                <p>
+                    Email
+                </p>
+                <p>
+                    Support
+                </p>
+                <p>
+                    Privacy Policy
+                </p>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>
